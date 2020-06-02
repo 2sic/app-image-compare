@@ -20,4 +20,4 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
 
 ## Screenshots
 
-Read more about it in the [App Catalog](https://2sxc.org/en/apps/app/image-compare-using-twentytwenty)
+Read more about it in the [App Catalog](https://2sxc.org/en/apps/app/compare-images-using-touch-slider-js-twentytwenty-app-for-dnn-dotnetnuke)
