@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.04.01" ExportDate="2021-09-16T19:12:14.5113796+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.04.01" ExportDate="2021-09-16T19:17:23.2699979+02:00">
   <Header>
-    <App Guid="f5ddb0b5-8f3f-4d85-b63e-de5d88caf096" />
+    <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
     <Dimensions>
       <Dimension DimensionID="163" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
@@ -517,11 +517,11 @@
       <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="DisplayName" Value="Bildvergleich" Type="String">
-        <Dimension DimensionID="164" ReadOnly="false" />
-      </Value>
       <Value Key="DisplayName" Value="Image Compare" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="DisplayName" Value="Bildvergleich" Type="String">
+        <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
       <Value Key="Folder" Value="ImageCompare2" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
