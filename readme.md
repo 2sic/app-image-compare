@@ -1,20 +1,33 @@
 <image src="app-icon.png" align="right" width="200px">
 
-# Image Compare App for DNN (DotNetNuke)
+# Image Compare 3 - Compare Images App
+
+> This is a 2sxc App for [DNN ☢️](https://www.dnnsoftware.com/) and [Oqtane 💧](https://www.oqtane.org/)
 
 A 2sxc / DNN App to highlight the differences between two images.
 
-## Installing the app
+TODO: ASPECTS
 
-You can install the app with the ["Installing Image Compare" checklist](https://azing.org/2sxc/r/VipBSgUQ)
 
-## Customizing the app
+| Aspect              | Status | Comments or Version |
+| ------------------- | :----: | ------------------- |
+| 2sxc                | ✅    | ImageCompare v2.0 requires 2sxc v12.05
+| Dnn                 | ✅    | For v7, v8 and v9
+| Oqtane 2            | ✅    | Requires v2.02
+| No jQuery           | ✅    | Since v2.00
+| Live Demo           | ✅    | See [blog with live demo](todo)
+| Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
+| Source & License    | ✅    | included, ISC/MIT
+| App Catalog         | ✅    | See [app catalog](todo)
+| Best Practices      | WIP    | Uses v12.05 conventions
+| Bootstrap 4         | WIP   | v4 optimized
+| Bootstrap 5         | ✔️ ??   | Tested but not optimized
 
-### Configuration (Settings, Resources)
+## Customize the app
 
-The Image Compare App has neither app settings nor app resources
+The Image Compare App has neither app settings nor app resources, so there's little to configure.
 
-### Style
+But since it's open source, you can easily modify it to become anything you want.
 
 The App uses inline-styles and style tags, which you can directly adjust in the templates.
 

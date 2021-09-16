@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.02.00" ExportDate="2020-06-02T10:51:23.6066732+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.04.01" ExportDate="2021-09-16T19:12:14.5113796+02:00">
   <Header>
     <App Guid="f5ddb0b5-8f3f-4d85-b63e-de5d88caf096" />
-    <Language Default="en-US" />
+    <Language Default="en-us" />
     <Dimensions>
       <Dimension DimensionID="163" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
       <Dimension DimensionID="164" Name="Deutsch (Deutschland)" SystemKey="" ExternalKey="de-DE" Active="true" />
@@ -239,7 +239,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="363989be-3ff4-4461-b28b-6fbf536107a8" Json="True" KeyNumber="406">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="wysiwyg" Type="String" />
-            <Value Key="RowCount" Value="1.0" Type="Number" />
+            <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -363,7 +363,7 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="caf2c6c8-bfe5-4edc-93a1-fdaca24cc8eb" Json="True" KeyNumber="411">
             <Value Key="DropdownValues" Value="Crop so it fills the area (default resize):crop&#xD;&#xA;Pad white on the side/top if needed:pad&#xD;&#xA;Max out width/height but don't pad:max&#xD;&#xA;Strech so it fits area:strech&#xD;&#xA;Disable image resize - just size container:none#" Type="String" />
             <Value Key="InputType" Value="dropdown" Type="String" />
-            <Value Key="RowCount" Value="1.0" Type="Number" />
+            <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="129e3151-38e6-4d4c-946a-d782523aaeed" Json="True" KeyNumber="411">
             <Value Key="DropdownValues" Value="Crop so it fills the area (default resize):crop&#xA;Pad white on the side/top if needed:pad&#xA;Max out width/height but don't pad:max&#xA;Strech so it fits area:stretch&#xA;Disable image resize - just size container:none#" Type="String">
@@ -445,85 +445,304 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="05475889-dae9-4d37-877c-0ec3f9af7313" Name="ViewSettings" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="TextPosition" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c54808be-be67-4bc1-8151-6da960ce37fd" Json="True" KeyNumber="4836">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="none" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="string-dropdown" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="TextPosition" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b82e71ce-7c07-44c7-9ec1-b697d4976664" Json="True" KeyNumber="4836">
+            <Value Key="DropdownValues" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="8b50bed5-b52e-4d4e-9010-05ee2144b244" Json="True" KeyNumber="4836">
+            <Value Key="DropdownValues" Value="none:None&#xA;left:Left&#xA;right:Right" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
   </AttributeSets>
   <Entities>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="e277b195-6827-481e-9a10-e5cb7c630b23" Json="True" KeyNumber="6">
-      <Value Key="AllowRazorTemplates" Value="False" Type="Boolean" />
-      <Value Key="AllowTokenTemplates" Value="True" Type="Boolean" />
-      <Value Key="Description" Value="" Type="String" />
-      <Value Key="DisplayName" Value="Image Compare" Type="String" />
+      <Value Key="AllowRazorTemplates" Value="True" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="AllowTokenTemplates" Value="True" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="DisplayName" Value="Bildvergleich" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Folder" Value="Image Compare" Type="String" />
-      <Value Key="Hidden" Value="False" Type="Boolean" />
-      <Value Key="OriginalId" Value="f5ddb0b5-8f3f-4d85-b63e-de5d88caf096" Type="String" />
-      <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
-      <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
-      <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="01.03.00" Type="String" />
+      <Value Key="DisplayName" Value="Image Compare" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Folder" Value="ImageCompare2" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Hidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="OriginalId" Value="f5ddb0b5-8f3f-4d85-b63e-de5d88caf096" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="RequiredOqtaneVersion" Value="02.02.00" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="RequiredVersion" Value="12.05.00" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Version" Value="02.00.00" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="718a0216-d24f-4f7f-b4e9-7c83a7c79fb1" KeyNumber="6" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="7a08595b-2b9b-497d-af42-aa6616dacf2c" KeyNumber="6" />
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="337873f2-5b5e-482b-8676-32b2903f99d6" Json="True">
       <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity" />
-      <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String" />
-      <Value Key="IsHidden" Value="False" Type="Boolean" />
-      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Portal File System" Type="String" />
-      <Value Key="Name" Value="Compare Images large (without description)" Type="String" />
+      <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="Name" Value="Bilder Vergleich groß (ohne Beschreibung)" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="Images without description.html" Type="String" />
+      <Value Key="Name" Value="Compare Images large (without description)" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_ImageCompare.cshtml" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="PresentationDemoEntity" Value="2ec14499-5a42-4017-be35-fbbad1b746b3" Type="Entity" />
-      <Value Key="PresentationTypeStaticName" Value="be289fdc-0768-4d46-85a0-aff8195e34ba" Type="String" />
-      <Value Key="PublishData" Value="False" Type="Boolean" />
-      <Value Key="StreamsToPublish" Value="" Type="String" />
-      <Value Key="Type" Value="Token" Type="String" />
-      <Value Key="UseForList" Value="False" Type="Boolean" />
-      <Value Key="ViewNameInUrl" Value="" Type="String" />
+      <Value Key="PresentationTypeStaticName" Value="be289fdc-0768-4d46-85a0-aff8195e34ba" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Settings" Value="cc4ab074-8d23-4d3c-9e9c-8c959f122bfa" Type="Entity" />
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="72932239-82fe-441f-94ce-9dbc0bcd0e09" Json="True">
       <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity" />
-      <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String" />
-      <Value Key="IsHidden" Value="False" Type="Boolean" />
-      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Portal File System" Type="String" />
-      <Value Key="Name" Value="Compare with text, images left side" Type="String" />
+      <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="Name" Value="Vergleich mit Text, Bilder links" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="Images left with description.html" Type="String" />
+      <Value Key="Name" Value="Compare with text, images left side" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_ImageCompare.cshtml" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="PresentationDemoEntity" Value="2ec14499-5a42-4017-be35-fbbad1b746b3" Type="Entity" />
-      <Value Key="PresentationTypeStaticName" Value="be289fdc-0768-4d46-85a0-aff8195e34ba" Type="String" />
-      <Value Key="PublishData" Value="False" Type="Boolean" />
-      <Value Key="StreamsToPublish" Value="" Type="String" />
-      <Value Key="Type" Value="Token" Type="String" />
-      <Value Key="UseForList" Value="False" Type="Boolean" />
-      <Value Key="ViewNameInUrl" Value="" Type="String" />
+      <Value Key="PresentationTypeStaticName" Value="be289fdc-0768-4d46-85a0-aff8195e34ba" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Settings" Value="2e64a57e-1034-4976-aec9-43830bc7b4db" Type="Entity" />
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="0eacc0d6-95ab-43fd-9287-53c62b60312e" Json="True">
       <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity" />
-      <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String" />
-      <Value Key="IsHidden" Value="False" Type="Boolean" />
-      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Portal File System" Type="String" />
-      <Value Key="Name" Value="Compare with text, images right side" Type="String" />
+      <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="Name" Value="Vergleich mit Text, Bilder rechts" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="Images right with description.html" Type="String" />
+      <Value Key="Name" Value="Compare with text, images right side" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_ImageCompare.cshtml" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="PresentationDemoEntity" Value="2ec14499-5a42-4017-be35-fbbad1b746b3" Type="Entity" />
-      <Value Key="PresentationTypeStaticName" Value="be289fdc-0768-4d46-85a0-aff8195e34ba" Type="String" />
-      <Value Key="PublishData" Value="False" Type="Boolean" />
-      <Value Key="StreamsToPublish" Value="" Type="String" />
-      <Value Key="Type" Value="Token" Type="String" />
-      <Value Key="UseForList" Value="False" Type="Boolean" />
-      <Value Key="ViewNameInUrl" Value="" Type="String" />
+      <Value Key="PresentationTypeStaticName" Value="be289fdc-0768-4d46-85a0-aff8195e34ba" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Settings" Value="40918f61-0d45-4125-a35e-941c7c296bac" Type="Entity" />
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="008e5f77-5b62-40ea-898a-547299b78bef" Json="True">
+      <Value Key="Content" Value="null" Type="Entity" />
+      <Value Key="Presentation" Value="null" Type="Entity" />
+      <Value Key="Template" Value="337873f2-5b5e-482b-8676-32b2903f99d6" Type="Entity" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="61aeeb53-bb4a-4902-8682-43e37e8157f1" Json="True">
+      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" AttributeSetName="Compare Images" EntityGUID="37788e1b-c9cb-4e31-8072-f4b0c77359de">
       <Value Key="AfterImage" Value="file:4519" Type="Hyperlink" />
@@ -614,21 +833,58 @@
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="10b02d5e-0f9d-4327-9266-a3f07ec0ed89" Json="True">
+      <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="05475889-dae9-4d37-877c-0ec3f9af7313" AttributeSetName="ViewSettings" EntityGUID="cc4ab074-8d23-4d3c-9e9c-8c959f122bfa">
+      <Value Key="TextPosition" Value="none" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="05475889-dae9-4d37-877c-0ec3f9af7313" AttributeSetName="ViewSettings" EntityGUID="2e64a57e-1034-4976-aec9-43830bc7b4db">
+      <Value Key="TextPosition" Value="left" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="05475889-dae9-4d37-877c-0ec3f9af7313" AttributeSetName="ViewSettings" EntityGUID="40918f61-0d45-4125-a35e-941c7c296bac">
+      <Value Key="TextPosition" Value="right" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+    </Entity>
   </Entities>
   <PortalFiles>
-    <File Id="4519" RelativePath="adam\Image Compare\G454N8vJMU6AcvSwx3NZ3g\AfterImage\flowers sepia.jpg" />
-    <File Id="4520" RelativePath="adam\Image Compare\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers original.jpg" />
-    <File Id="4518" RelativePath="adam\Image Compare\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers sepia.jpg" />
-    <File Id="4517" RelativePath="adam\Image Compare\IMKYxeF9l0eOKzJhR4MWUQ\AfterImage\Vater_Sohn_Bank_zugeschnitte.jpg" />
-    <File Id="4516" RelativePath="adam\Image Compare\IMKYxeF9l0eOKzJhR4MWUQ\BeforeImage\AdobeStock_133147931.jpeg" />
+    <File Id="4519" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\AfterImage\flowers sepia.jpg" />
+    <File Id="4520" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers original.jpg" />
+    <File Id="4518" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers sepia.jpg" />
+    <File Id="4517" RelativePath="adam\ImageCompare2\IMKYxeF9l0eOKzJhR4MWUQ\AfterImage\Vater_Sohn_Bank_zugeschnitte.jpg" />
+    <File Id="4516" RelativePath="adam\ImageCompare2\IMKYxeF9l0eOKzJhR4MWUQ\BeforeImage\AdobeStock_133147931.jpeg" />
+    <File Id="4521" RelativePath="adam\ImageCompare2\jtMx67kkxEajc1FBtme6Lg\AfterImage\flowers sepia.jpg" />
+    <File Id="4522" RelativePath="adam\ImageCompare2\jtMx67kkxEajc1FBtme6Lg\BeforeImage\flowers original.jpg" />
   </PortalFiles>
   <PortalFolders>
-    <Folder Id="9949" RelativePath="adam/Image Compare/G454N8vJMU6AcvSwx3NZ3g/AfterImage/" />
-    <Folder Id="9948" RelativePath="adam/Image Compare/G454N8vJMU6AcvSwx3NZ3g/BeforeImage/" />
-    <Folder Id="9946" RelativePath="adam/Image Compare/IMKYxeF9l0eOKzJhR4MWUQ/AfterImage/" />
-    <Folder Id="9945" RelativePath="adam/Image Compare/IMKYxeF9l0eOKzJhR4MWUQ/BeforeImage/" />
-    <Folder Id="9943" RelativePath="adam/Image Compare/" />
-    <Folder Id="9947" RelativePath="adam/Image Compare/G454N8vJMU6AcvSwx3NZ3g/" />
-    <Folder Id="9944" RelativePath="adam/Image Compare/IMKYxeF9l0eOKzJhR4MWUQ/" />
+    <Folder Id="9949" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/AfterImage/" />
+    <Folder Id="9948" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/BeforeImage/" />
+    <Folder Id="9946" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/AfterImage/" />
+    <Folder Id="9945" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/BeforeImage/" />
+    <Folder Id="9952" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/AfterImage/" />
+    <Folder Id="9953" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/BeforeImage/" />
+    <Folder Id="9943" RelativePath="adam/ImageCompare2/" />
+    <Folder Id="12737" RelativePath="adam/ImageCompare2/_0SXLz_4k0yvfx1skEKy2g/" />
+    <Folder Id="12738" RelativePath="adam/ImageCompare2/_0SXLz_4k0yvfx1skEKy2g/Icon/" />
+    <Folder Id="12741" RelativePath="adam/ImageCompare2/1sCsDquV_UOSh1PGK2AxLg/" />
+    <Folder Id="12742" RelativePath="adam/ImageCompare2/1sCsDquV_UOSh1PGK2AxLg/Icon/" />
+    <Folder Id="12735" RelativePath="adam/ImageCompare2/8nN4M15bK0iGdjKykD-Z1g/" />
+    <Folder Id="12736" RelativePath="adam/ImageCompare2/8nN4M15bK0iGdjKykD-Z1g/Icon/" />
+    <Folder Id="9947" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/" />
+    <Folder Id="9944" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/" />
+    <Folder Id="12743" RelativePath="adam/ImageCompare2/izYBx-CJlkiJOBIzsyGCVg/" />
+    <Folder Id="12745" RelativePath="adam/ImageCompare2/izYBx-CJlkiJOBIzsyGCVg/AfterImage/" />
+    <Folder Id="12744" RelativePath="adam/ImageCompare2/izYBx-CJlkiJOBIzsyGCVg/BeforeImage/" />
+    <Folder Id="9951" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/" />
+    <Folder Id="13406" RelativePath="adam/ImageCompare2/Mr7SIYEPAUOEA0CXxu5upQ/" />
+    <Folder Id="13407" RelativePath="adam/ImageCompare2/Mr7SIYEPAUOEA0CXxu5upQ/AfterImage/" />
+    <Folder Id="13408" RelativePath="adam/ImageCompare2/Mr7SIYEPAUOEA0CXxu5upQ/BeforeImage/" />
+    <Folder Id="12739" RelativePath="adam/ImageCompare2/OSKTcv6CH0SUzp28C80OCQ/" />
+    <Folder Id="12740" RelativePath="adam/ImageCompare2/OSKTcv6CH0SUzp28C80OCQ/Icon/" />
   </PortalFolders>
 </SexyContent>

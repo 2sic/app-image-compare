@@ -1,0 +1,36 @@
+@inherits Custom.Hybrid.Razor12
+@using ToSic.Razor.Blade;
+@{
+  var page = GetService<ToSic.Sxc.Web.IPageService>();
+
+  // todo
+  // 2mh: find a non-jquery image compare library, eval, discuss w/2dm
+  // when implemented, use turn-on
+  // change image resizing to use settings
+  // 2ro: change styles/code to use webpack (after we picked a new library)
+
+  var imageCompare = Content; // give it a nicer name so the code is easier to read
+  var sharedSettings = AsDynamic(imageCompare, Settings);
+  var moduleId = CmsContext.Module.Id;
+
+  var elemWidth = imageCompare.Presentation.Width + "px";
+}
+<div class="app-imagecompare2" @Edit.TagToolbar(Content)>
+    <h2>@imageCompare.Title</h2>
+    <div class="content"> <!-- find out what scale=both does-->
+        <div id="@moduleId" class="beer-slider" style="width: @elemWidth;" data-beer-label="@imageCompare.BeforeText"> 
+            <img src="@Link.Image(url: imageCompare.BeforeImage, resizeMode: @imageCompare.Presentation.ScaleMode, width: imageCompare.Presentation.Width, height: imageCompare.Presentation.Height)" />
+            <div class="beer-reveal" data-beer-label="@imageCompare.AfterText">
+                <img src="@Link.Image(url: imageCompare.AfterImage, resizeMode: @imageCompare.Presentation.ScaleMode, width: imageCompare.Presentation.Width, height: imageCompare.Presentation.Height)" />
+            </div>
+        </div>
+
+        @if(sharedSettings.TextPosition != "none") {
+            // adds reverse class, if text position is left
+            var reverse = sharedSettings.TextPosition == "left" ? "reverse" : "";
+            <div class="@reverse">@Html.Raw(imageCompare.DescriptionText)</div>
+        }
+    </div>
+</div>
+
+@Html.Partial("_ImageCompare.PartAssets.cshtml")
