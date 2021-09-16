@@ -9,26 +9,44 @@
   // change image resizing to use settings
   // 2ro: change styles/code to use webpack (after we picked a new library)
 
-  var imageCompare = Content; // give it a nicer name so the code is easier to read
-  var sharedSettings = AsDynamic(imageCompare, Settings);
+  // TODO: @2mh - I turned this off, we shouldn't always rename, only if it's really useful
+  // var imageCompare = Content; // give it a nicer name so the code is easier to read
+
+  // TODO: @2mh - not sure if we should mix this with Content, as 
+  // I think the setting is only ever configured on the view - so it's never on content
+  var sharedSettings = AsDynamic(Content, Settings);
+  var textPosition = sharedSettings.TextPosition;
   var moduleId = CmsContext.Module.Id;
 
-  var elemWidth = imageCompare.Presentation.Width + "px";
+  // TODO: @2mh - not sure if this is really useful, and it would be better if we didn't need it (responsive)
+  // pls check if we really need it, to me it appears that it just works
+  // except for the case where the images should be to the right - ATM they are invisible
+  // var elemWidth = imageCompare.Presentation.Width + "px";
+
+  // temp 2dm
+  var resizeSettings = AsDynamic(Content.ImageSettings, App.Settings.ImageSettings, Settings.Images.Content);
+  
+  // Todo: Discuss w/2ro - we should probably use a BS-cols count or something instead?
+  var elemWidth = (textPosition == "none") ? "100%" : "600px";
+
+  // TODO: Bug? if the screen is narrow, the splitter moves with the text height, not with the image height
+  // TODO: 2mh - there is a setting to hide labels, but it seems to be forgotten
 }
 <div class="app-imagecompare2" @Edit.TagToolbar(Content)>
-    <h2>@imageCompare.Title</h2>
-    <div class="content"> <!-- find out what scale=both does-->
-        <div id="@moduleId" class="beer-slider" style="width: @elemWidth;" data-beer-label="@imageCompare.BeforeText"> 
-            <img src="@Link.Image(url: imageCompare.BeforeImage, resizeMode: @imageCompare.Presentation.ScaleMode, width: imageCompare.Presentation.Width, height: imageCompare.Presentation.Height)" />
-            <div class="beer-reveal" data-beer-label="@imageCompare.AfterText">
-                <img src="@Link.Image(url: imageCompare.AfterImage, resizeMode: @imageCompare.Presentation.ScaleMode, width: imageCompare.Presentation.Width, height: imageCompare.Presentation.Height)" />
+    <h2>@Content.Title</h2>
+    <div class="content"> <!-- todo: find out what scale=both does-->
+        <div id="@moduleId" class="beer-slider" @* style="width: @elemWidth;" *@ data-beer-label="@Content.BeforeLabel"> 
+            <img src="@Link.Image(Content.BeforeImage, resizeSettings)" />
+            <div class="beer-reveal" data-beer-label="@Content.AfterLabel">
+                <img src="@Link.Image(Content.AfterImage, resizeSettings)" />
             </div>
         </div>
 
-        @if(sharedSettings.TextPosition != "none") {
+        @if(textPosition != "none") {
             // adds reverse class, if text position is left
-            var reverse = sharedSettings.TextPosition == "left" ? "reverse" : "";
-            <div class="@reverse">@Html.Raw(imageCompare.DescriptionText)</div>
+            // todo: 2mh - is this still relevant, or a leftover ? the classes don't seem to make sense to me
+            var reverse = textPosition == "left" ? "reverse" : "";
+            <div class="@reverse">@Html.Raw(Content.DescriptionText)</div>
         }
     </div>
 </div>
