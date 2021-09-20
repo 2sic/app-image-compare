@@ -51,7 +51,7 @@ module.exports = {
   ],
   module: {
     rules: [{
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,

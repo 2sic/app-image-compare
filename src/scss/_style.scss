@@ -1,11 +1,22 @@
+@import url('../../node_modules/beerslider/dist/BeerSlider.css');
 .app-imagecompare2 {
     margin-bottom: 25px;
     .content {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        >div {
+            width: calc(50% - 10px);
+        }
     }
-    .reverse {
-        grid-row-start: 1;
+    .reverse-col {
+        flex-wrap: wrap-reverse;
+    }
+
+    @media (max-width: 885px) {
+        .content > div {
+            width: 100%;
+        }
     }
 }
