@@ -26,7 +26,7 @@
 }
 <div class="app-imagecompare2" @Edit.TagToolbar(Content)>
     <h2>@Content.Title</h2>
-    <div class="content "> <!-- todo: find out what scale=both does-->
+    <div class="content"> <!-- todo: find out what scale=both does-->
         <div style="@order">
             <div id="@moduleId" class="beer-slider" @* style="elemWidth" *@  data-beer-label="@labelBefore"> 
                 <img src="@Link.Image(Content.BeforeImage, resizeSettings)" />
@@ -36,7 +36,7 @@
             </div>
         </div>
         @if(textPosition != "none") {
-            <div>@Html.Raw(Content.DescriptionText)</div>
+            <div class="content-text">@Html.Raw(Content.DescriptionText)</div>
         }
     </div>
 </div>
