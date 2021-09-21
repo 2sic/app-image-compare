@@ -9,10 +9,16 @@
             flex: 1;
         }
     }
+    .order-first {
+        order: 1;
+    }
 
     @media (max-width: 885px) {
         .content > div {
             width: 100%;
+        }
+        .order-first {
+            order: 0;
         }
     }
 }

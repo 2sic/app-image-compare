@@ -22,13 +22,13 @@
     var labelAfter = sharedSettings.ShowLabels ? Content.AfterLabel : "";
 
     // sets image order to 1, if text should be left
-    var order = textPosition == "left" ? "order: 1;" : "";
+    var order = textPosition == "left" ? "order-first" : "";
 }
 <div class="app-imagecompare2" @Edit.TagToolbar(Content)>
     <h2>@Content.Title</h2>
     <div class="content"> <!-- todo: find out what scale=both does-->
-        <div style="@order">
-            <div id="@moduleId" class="beer-slider" @* style="elemWidth" *@  data-beer-label="@labelBefore"> 
+        <div class="@order">
+            <div id="beerslider-@moduleId" class="beer-slider" @* style="elemWidth" *@  data-beer-label="@labelBefore"> 
                 <img src="@Link.Image(Content.BeforeImage, resizeSettings)" />
                 <div class="beer-reveal" data-beer-label="@labelAfter">
                     <img src="@Link.Image(Content.AfterImage, resizeSettings)" />
