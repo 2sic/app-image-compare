@@ -19,7 +19,7 @@
 
     var domId = "app-imagecompare2-id" + CmsContext.Module.Id;
 }
-<div class="app-imagecompare2" @Edit.TagToolbar(Content)>
+<div class="app-imagecompare2-main" @Edit.TagToolbar(Content)>
   @* if we don't show the content/body, the title will still be needed, but above the image *@
   @if (!showContent) {
     <h2>@Content.Title</h2>
