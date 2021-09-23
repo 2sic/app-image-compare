@@ -3,20 +3,19 @@
 @{
     var page = GetService<ToSic.Sxc.Web.IPageService>();
 
-    // todo
-    // change image resizing to use settings
-
+    // TODO: change image resizing to use settings
     var sharedSettings = AsDynamic(Content, Settings);
+
+    // TODO: this setting doesn't even exist!
     var textPosition = sharedSettings.TextPosition;
     var moduleId = CmsContext.Module.Id;
 
     // temp 2dm
+    // TODO: Content.ImageSettings doesn't exist
     var resizeSettings = AsDynamic(Content.ImageSettings, App.Settings.ImageSettings, Settings.Images.Content);
     
     // Todo: Discuss w/2ro - we should probably use a BS-cols count or something instead?
     var elemWidth = (textPosition == "none") ? "100%" : "600px";
-
-    // TODO: Bug? if the screen is narrow, the splitter moves with the text height, not with the image height
 
     var labelBefore = sharedSettings.ShowLabels ? Content.BeforeLabel : "";
     var labelAfter = sharedSettings.ShowLabels ? Content.AfterLabel : "";
@@ -28,6 +27,7 @@
     <h2>@Content.Title</h2>
     <div class="content"> <!-- todo: find out what scale=both does-->
         <div class="@order">
+            @* todo: 2mh - I think the class "beerslider-xxx" is from us, then better give it a name like app-imagecompare2-mod-# or something, "beer" isn't a good word *@
             <div id="beerslider-@moduleId" class="beer-slider" @* style="elemWidth" *@  data-beer-label="@labelBefore"> 
                 <img src="@Link.Image(Content.BeforeImage, resizeSettings)" />
                 <div class="beer-reveal" data-beer-label="@labelAfter">
