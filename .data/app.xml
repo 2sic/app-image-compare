@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-09-23T16:26:44.3468688+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-09-23T16:51:26.0748456+02:00">
   <Header>
     <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
@@ -535,66 +535,6 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="05475889-dae9-4d37-877c-0ec3f9af7313" Name="ViewSettings" Description="" Scope="System.Configuration" AlwaysShareConfiguration="false">
-      <Attributes>
-        <Attribute StaticName="TextPosition" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c54808be-be67-4bc1-8151-6da960ce37fd" Json="True" KeyNumber="4836">
-            <Value Key="CustomJavaScript" Value="" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="DefaultValue" Value="none" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="Disabled" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="DisableTranslation" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="InputType" Value="string-dropdown" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="Name" Value="TextPosition" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="Notes" Value="" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="Placeholder" Value="" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="Required" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="b82e71ce-7c07-44c7-9ec1-b697d4976664" Json="True" KeyNumber="4836">
-            <Value Key="DropdownValues" Value="" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="InputType" Value="" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="8b50bed5-b52e-4d4e-9010-05ee2144b244" Json="True" KeyNumber="4836">
-            <Value Key="DropdownValues" Value="none:None&#xA;left:Left&#xA;right:Right" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="DropdownValuesFormat" Value="value-label" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EnableTextEntry" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-          </Entity>
-        </Attribute>
-      </Attributes>
-    </AttributeSet>
   </AttributeSets>
   <Entities>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="e277b195-6827-481e-9a10-e5cb7c630b23" Json="True" KeyNumber="6">
@@ -689,7 +629,6 @@
       <Value Key="SearchIndexingStreams" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Settings" Value="cc4ab074-8d23-4d3c-9e9c-8c959f122bfa" Type="Entity" />
       <Value Key="StreamsToPublish" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -750,7 +689,6 @@
       <Value Key="SearchIndexingStreams" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Settings" Value="2e64a57e-1034-4976-aec9-43830bc7b4db" Type="Entity" />
       <Value Key="StreamsToPublish" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -811,7 +749,6 @@
       <Value Key="SearchIndexingStreams" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Settings" Value="40918f61-0d45-4125-a35e-941c7c296bac" Type="Entity" />
       <Value Key="StreamsToPublish" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -928,21 +865,6 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="10b02d5e-0f9d-4327-9266-a3f07ec0ed89" Json="True">
       <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="05475889-dae9-4d37-877c-0ec3f9af7313" AttributeSetName="ViewSettings" EntityGUID="cc4ab074-8d23-4d3c-9e9c-8c959f122bfa">
-      <Value Key="TextPosition" Value="none" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="05475889-dae9-4d37-877c-0ec3f9af7313" AttributeSetName="ViewSettings" EntityGUID="2e64a57e-1034-4976-aec9-43830bc7b4db">
-      <Value Key="TextPosition" Value="left" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="05475889-dae9-4d37-877c-0ec3f9af7313" AttributeSetName="ViewSettings" EntityGUID="40918f61-0d45-4125-a35e-941c7c296bac">
-      <Value Key="TextPosition" Value="right" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="a7a3dc0b-560a-498b-8191-d4f3e264ff4d" Json="True">
       <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />

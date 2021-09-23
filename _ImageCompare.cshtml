@@ -1,27 +1,31 @@
 @inherits Custom.Hybrid.Razor12
 @using ToSic.Razor.Blade;
 @{
+    // Info: we're not using Bootstrap classes because ATM this App is CSS-Neutral
+    // For more extensive/custom use, we suggest use Bootstrap classes
+
     // Figure out positioning of text based on View Settings, usually left, right or none
-    var showContent = Settings.TextPosition != "none";
-    var imagePositionClass = Settings.TextPosition == "left" ? "order-first" : "";
+    var contentPosition = CmsContext.View.Identifier /* Settings.TextPosition */;
+    var showContent = contentPosition != "none";
+    var imagePositionClass = contentPosition == "left" ? "app-imagecompare2-after-text" : "";
+    var imgWidthClass = showContent ? "app-imagecompare2-img50" : "";
 
     // Merge settings of curretn item with defaults to get resize parameters
     var resizeSettings = AsDynamic(Content.ImageSettings, Settings.ImageSettings);
     var resizeFactor = showContent && Content.ImageSettings.EntityId == 0 ? 0.5 : 1;
     
-    // Info: we're not using Bootstrap cols here because ATM this App is CSS-Neutral
-    // For more extensive/custom use, we suggest use Bootstrap classes
     var labelBefore = Content.ShowLabels ? Content.BeforeLabel : "";
     var labelAfter = Content.ShowLabels ? Content.AfterLabel : "";
 
-    var domId = "app-imagecompare2-" + CmsContext.Module.Id;
+    var domId = "app-imagecompare2-id" + CmsContext.Module.Id;
 }
 <div class="app-imagecompare2" @Edit.TagToolbar(Content)>
+  @* if we don't show the content/body, the title will still be needed, but above the image *@
   @if (!showContent) {
     <h2>@Content.Title</h2>
   }
   <div class="app-imagecompare2-content">
-    <div class="@imagePositionClass">
+    <div class="@imgWidthClass @imagePositionClass">
         <div id="@domId" class="beer-slider" data-beer-label="@labelBefore"> 
           <img src="@Link.Image(Content.LeftImage, resizeSettings, factor: resizeFactor)" />
           <div class="beer-reveal" data-beer-label="@labelAfter">

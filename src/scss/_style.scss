@@ -10,15 +10,24 @@
         flex: 1;
     }
   }
-  .order-first {
+  .app-imagecompare2-after-text {
     order: 1;
+  }
+
+  .app-imagecompare2-img50 {
+    width: 50%;
   }
 
   @media (max-width: 885px) {
     .app-imagecompare2-content > div {
       width: 100%;
     }
-    .order-first {
+
+    .app-imagecompare2-img50 {
+      width: 100%;
+    }
+
+    .app-imagecompare2-after-text {
       order: 0;
     }
   }
