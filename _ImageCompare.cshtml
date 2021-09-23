@@ -1,44 +1,41 @@
 @inherits Custom.Hybrid.Razor12
 @using ToSic.Razor.Blade;
 @{
-    var page = GetService<ToSic.Sxc.Web.IPageService>();
+    // Figure out positioning of text based on View Settings, usually left, right or none
+    var showContent = Settings.TextPosition != "none";
+    var imagePositionClass = Settings.TextPosition == "left" ? "order-first" : "";
 
-    // TODO: change image resizing to use settings
-    var sharedSettings = AsDynamic(Content, Settings);
-
-    // TODO: this setting doesn't even exist!
-    var textPosition = sharedSettings.TextPosition;
-    var moduleId = CmsContext.Module.Id;
-
-    // temp 2dm
-    // TODO: Content.ImageSettings doesn't exist
-    var resizeSettings = AsDynamic(Content.ImageSettings, App.Settings.ImageSettings, Settings.Images.Content);
+    // Merge settings of curretn item with defaults to get resize parameters
+    var resizeSettings = AsDynamic(Content.ImageSettings, Settings.ImageSettings);
+    var resizeFactor = showContent && Content.ImageSettings.EntityId == 0 ? 0.5 : 1;
     
-    // Todo: Discuss w/2ro - we should probably use a BS-cols count or something instead?
-    var elemWidth = (textPosition == "none") ? "100%" : "600px";
+    // Info: we're not using Bootstrap cols here because ATM this App is CSS-Neutral
+    // For more extensive/custom use, we suggest use Bootstrap classes
+    var labelBefore = Content.ShowLabels ? Content.BeforeLabel : "";
+    var labelAfter = Content.ShowLabels ? Content.AfterLabel : "";
 
-    var labelBefore = sharedSettings.ShowLabels ? Content.BeforeLabel : "";
-    var labelAfter = sharedSettings.ShowLabels ? Content.AfterLabel : "";
-
-    // sets image order to 1, if text should be left
-    var order = textPosition == "left" ? "order-first" : "";
+    var domId = "app-imagecompare2-" + CmsContext.Module.Id;
 }
 <div class="app-imagecompare2" @Edit.TagToolbar(Content)>
+  @if (!showContent) {
     <h2>@Content.Title</h2>
-    <div class="content"> <!-- todo: find out what scale=both does-->
-        <div class="@order">
-            @* todo: 2mh - I think the class "beerslider-xxx" is from us, then better give it a name like app-imagecompare2-mod-# or something, "beer" isn't a good word *@
-            <div id="beerslider-@moduleId" class="beer-slider" @* style="elemWidth" *@  data-beer-label="@labelBefore"> 
-                <img src="@Link.Image(Content.BeforeImage, resizeSettings)" />
-                <div class="beer-reveal" data-beer-label="@labelAfter">
-                    <img src="@Link.Image(Content.AfterImage, resizeSettings)" />
-                </div>
-            </div>
+  }
+  <div class="app-imagecompare2-content">
+    <div class="@imagePositionClass">
+        <div id="@domId" class="beer-slider" data-beer-label="@labelBefore"> 
+          <img src="@Link.Image(Content.LeftImage, resizeSettings, factor: resizeFactor)" />
+          <div class="beer-reveal" data-beer-label="@labelAfter">
+            <img src="@Link.Image(Content.RightImage, resizeSettings, factor: resizeFactor)" />
+          </div>
         </div>
-        @if(textPosition != "none") {
-            <div class="content-text">@Html.Raw(Content.DescriptionText)</div>
-        }
     </div>
+    @if (showContent) {
+      <div class="content-text">
+        <h2>@Content.Title</h2>
+        @Html.Raw(Content.DescriptionText)
+      </div>
+    }
+  </div>
 </div>
 
-@Html.Partial("_ImageCompare.PartAssets.cshtml")
+@Html.Partial("_ImageCompare.PartAssets.cshtml", new { DomId = domId })

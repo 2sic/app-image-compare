@@ -1,24 +1,25 @@
 @import url('../../node_modules/beerslider/dist/BeerSlider.css');
+
 .app-imagecompare2 {
-    margin-bottom: 25px;
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        >.content-text {
-            flex: 1;
-        }
+  margin-bottom: 25px;
+  .app-imagecompare2-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    >.content-text {
+        flex: 1;
+    }
+  }
+  .order-first {
+    order: 1;
+  }
+
+  @media (max-width: 885px) {
+    .app-imagecompare2-content > div {
+      width: 100%;
     }
     .order-first {
-        order: 1;
+      order: 0;
     }
-
-    @media (max-width: 885px) {
-        .content > div {
-            width: 100%;
-        }
-        .order-first {
-            order: 0;
-        }
-    }
+  }
 }
