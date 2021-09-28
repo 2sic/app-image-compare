@@ -5,12 +5,12 @@
     // For more extensive/custom use, we suggest use Bootstrap classes
 
     // Figure out positioning of text based on View Settings, usually left, right or none
-    var contentPosition = CmsContext.View.Identifier /* Settings.TextPosition */;
+    var contentPosition = CmsContext.View.Identifier
     var showContent = contentPosition != "none";
     var imagePositionClass = contentPosition == "left" ? "app-imagecompare2-after-text" : "";
     var imgWidthClass = showContent ? "app-imagecompare2-img50" : "";
 
-    // Merge settings of curretn item with defaults to get resize parameters
+    // Merge settings of current item with defaults to get resize parameters
     var resizeSettings = AsDynamic(Content.ImageSettings, Settings.ImageSettings);
     var resizeFactor = showContent && Content.ImageSettings.EntityId == 0 ? 0.5 : 1;
     
