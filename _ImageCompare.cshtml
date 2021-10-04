@@ -27,9 +27,9 @@
   <div class="app-imagecompare2-content">
     <div class="@imgWidthClass @imagePositionClass">
         <div id="@domId" class="beer-slider" data-beer-label="@labelBefore"> 
-          <img src="@Link.Image(Content.LeftImage, resizeSettings, factor: resizeFactor)" />
+          <img loading="lazy" src="@Link.Image(Content.LeftImage, resizeSettings, factor: resizeFactor)" />
           <div class="beer-reveal" data-beer-label="@labelAfter">
-            <img src="@Link.Image(Content.RightImage, resizeSettings, factor: resizeFactor)" />
+            <img loading="lazy" src="@Link.Image(Content.RightImage, resizeSettings, factor: resizeFactor)" />
           </div>
         </div>
     </div>
