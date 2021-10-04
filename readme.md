@@ -2,7 +2,7 @@
 
 # Image Compare 2 App for .net CMSs
 
-> This is a 2sxc App for [DNN ☢️](https://www.dnnsoftware.com/) and [Oqtane 💧](https://www.oqtane.org/)
+> This is a [2sxc](https://2sxc.org) App for [DNN ☢️](https://www.dnnsoftware.com/) and [Oqtane 💧](https://www.oqtane.org/)
 
 A 2sxc / DNN App to highlight the differences between two images.
 
@@ -12,7 +12,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 | Dnn                 | ✅    | For v7, v8 and v9
 | Oqtane 2            | ✅    | Requires v2.02
 | No jQuery           | ✅    | Since v2.00
-| Live Demo           | ✅    | See [blog with live demo](todo)
+| Live Demo           | ➖    | 
 | Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
 | Source & License    | ✅    | included, ISC/MIT
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-using-touch-slider-js-twentytwenty-app-for-dnn-dotnetnuke)
@@ -21,7 +21,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 | Bootstrap 4         | ✅    | v4 optimized
 | Bootstrap 5         | ✔️    | Tested but not optimized
 
-## Customize the app
+## Customize the App
 
 The Image Compare App has neither app settings nor app resources, so there's little to configure.
 
