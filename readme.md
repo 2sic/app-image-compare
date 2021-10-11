@@ -15,8 +15,8 @@ A 2sxc / DNN App to highlight the differences between two images.
 | Live Demo           | ➖    | 
 | Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
 | Source & License    | ✅    | included, ISC/MIT
-| App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-using-touch-slider-js-twentytwenty-app-for-dnn-dotnetnuke)
-| Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-using-touch-slider-js-twentytwenty-app-for-dnn-dotnetnuke)
+| App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-v2-using-beerslider-hybrid-for-dnn-and-oqtane)
+| Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-v2-using-beerslider-hybrid-for-dnn-and-oqtane)
 | Best Practices      | ✅    | Uses v12.05 conventions
 | Bootstrap 4         | ✅    | v4 optimized
 | Bootstrap 5         | ✔️    | Tested but not optimized
