@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="12.05.00" ExportDate="2021-10-11T16:49:42.2798606+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.01" ExportDate="2022-01-05T09:00:33.556675+01:00">
   <Header>
     <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
@@ -9,10 +9,10 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="658aed3e-b1c8-4274-b426-6e84fcb66270" Json="True" KeyNumber="4844">
@@ -86,7 +86,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Name="CompareImages" Description="Compare Images - With TwentyTwenty" Scope="2SexyContent" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Name="CompareImages" Description="Compare Images - With TwentyTwenty" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d63d5310-f40a-4874-bbb3-a7ac8c8fcbe8" Json="True" KeyNumber="403">
@@ -574,7 +574,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.00.00" Type="String">
+      <Value Key="Version" Value="02.00.01" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
@@ -957,6 +957,7 @@
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="529ba3a2-d7d4-4f40-a81b-ff819de03a9e" AttributeSetName="IsDefaultDecorator" EntityGUID="25a40359-2940-42d6-9f02-7e3d94293cd6" Json="True" KeyGuid="72932239-82fe-441f-94ce-9dbc0bcd0e09" />
   </Entities>
   <PortalFiles>
     <File Id="4520" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers original.jpg" />
