@@ -6,5 +6,5 @@ winAny.appImageCompare2 ??= {};
 winAny.appImageCompare2.init ??= init;
 
 export function init({ domId } : { domId: string }) {
-    new BeerSlider(document.getElementById(domId));
+  new BeerSlider(document.getElementById(domId));
 }
