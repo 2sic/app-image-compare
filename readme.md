@@ -41,3 +41,4 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
     * Moved all access of Services to ToSic.Sxc.Services
     * Changed from Image Tags to IImageService
     * Activated image configuration
+    * Replaced data-enableoptimization wit pageSvc.AssetAttributes()

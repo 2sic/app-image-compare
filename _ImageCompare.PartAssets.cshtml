@@ -5,5 +5,5 @@
   GetService<IPageService>().Activate("turnOn");
 }
 <turnOn turn-on='{ "run": "window.appImageCompare2.init()", "data": { "domId": "@DynamicModel.DomId" } }'></turnOn>
-<link rel="stylesheet" href="@App.Path/dist/styles.min.css" data-enableoptimizations="true">
-<script type="text/javascript" src="@App.Path/dist/scripts.min.js" data-enableoptimizations="bottom"></script>
+<link rel="stylesheet" href="@App.Path/dist/styles.min.css" @(page.AssetAttributes())>
+<script type="text/javascript" src="@App.Path/dist/scripts.min.js" @(page.AssetAttributes(position:"bottom" ))></script>
