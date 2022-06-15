@@ -8,7 +8,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | ImageCompare v2.0 requires 2sxc v12.05
+| 2sxc                | ✅    | ImageCompare v2.0 requires 2sxc v13.10
 | Dnn                 | ✅    | For v7, v8 and v9
 | Oqtane 2            | ✅    | Requires v2.02
 | No jQuery           | ✅    | Since v2.00
@@ -17,7 +17,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 | Source & License    | ✅    | included, ISC/MIT
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-v2-using-beerslider-hybrid-for-dnn-and-oqtane)
 | Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-v2-using-beerslider-hybrid-for-dnn-and-oqtane)
-| Best Practices      | ✅    | Uses v12.05 conventions
+| Best Practices      | ✅    | Uses v13.10 conventions
 | Bootstrap 4         | ✅    | v4 optimized
 | Bootstrap 5         | ✔️    | Tested but not optimized
 
