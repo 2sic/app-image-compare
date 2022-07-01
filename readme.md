@@ -42,3 +42,8 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
     * Changed from Image Tags to IImageService
     * Activated image configuration
     * Replaced data-enableoptimization wit pageSvc.AssetAttributes()
+
+* v2.02 2022-06 
+    * Replaced all base classes with their 2sxc 14 equivalents
+    * Removed all GetService<> and replaced them with the new ServiceKit14
+    * Updated webpack
