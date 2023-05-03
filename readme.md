@@ -8,7 +8,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | ImageCompare v2.0 requires 2sxc v13.10
+| 2sxc                | ✅    | requires 2sxc v16
 | Dnn                 | ✅    | For v7, v8 and v9
 | Oqtane 2            | ✅    | Requires v2.02
 | No jQuery           | ✅    | Since v2.00
@@ -31,19 +31,21 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
 
 ## History
 
-* v2.0 2021-09
-    * Updated to best practices of 2sxc 12.05
-    * Hybrid - now compatible with Oqtane
-    * No more jQuery-use
-    * Changed JS Library to use Beer
-
-* v2.01 2022-04
-    * Moved all access of Services to ToSic.Sxc.Services
-    * Changed from Image Tags to IImageService
-    * Activated image configuration
-    * Replaced data-enableoptimization wit pageSvc.AssetAttributes()
-
-* v2.02 2022-06 
-    * Replaced all base classes with their 2sxc 14 equivalents
-    * Removed all GetService<> and replaced them with the new ServiceKit14
-    * Updated webpack
+* v02.0 2021-09
+  * Updated to best practices of 2sxc 12.05
+  * Hybrid - now compatible with Oqtane
+  * No more jQuery-use
+  * Changed JS Library to use Beer
+* v02.01 2022-04
+  * Moved all access of Services to ToSic.Sxc.Services
+  * Changed from Image Tags to IImageService
+  * Activated image configuration
+  * Replaced data-enableoptimization wit pageSvc.AssetAttributes()
+* v02.02 2022-06 
+  * Replaced all base classes with their 2sxc 14 equivalents
+  * Removed all GetService<> and replaced them with the new ServiceKit14
+  * Updated webpack
+* v02.03 2023-05
+  * Enhanced Kit.Image with `imgAltFallback`
+  * Replaced turnOn Tag with `Kit.Page.TurnOn`
+  * Removed _ from Filenames

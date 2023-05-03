@@ -20,7 +20,7 @@
   var domId = "app-imagecompare2-id" + CmsContext.Module.Id;
 
 }
-<div class="app-imagecompare2-main" @Edit.TagToolbar(Content)>
+<div class="app-imagecompare2-main" @Kit.Toolbar.Default(Content)>
 
   @* if we don't show the content/body, the title will still be needed, but above the image *@
   @if (!showContent) {
@@ -29,10 +29,10 @@
   <div class="app-imagecompare2-content">
     <div class="@imgWidthClass @imagePositionClass">
         <div id="@domId" class="beer-slider" data-beer-label="@labelBefore">
-          @Kit.Image.Picture(Content.Field("LeftImage"), settings: resizeSettings , factor: resizeFactor, imgAlt: Content.Title)
+          @Kit.Image.Picture(Content.Field("LeftImage"), settings: resizeSettings , factor: resizeFactor, imgAltFallback : Content.Title)
           <div class="beer-reveal" data-beer-label="@labelAfter">
             <div>
-              @Kit.Image.Picture(Content.Field("RightImage"), settings: resizeSettings, factor: resizeFactor, imgAlt: Content.Title)
+              @Kit.Image.Picture(Content.Field("RightImage"), settings: resizeSettings, factor: resizeFactor, imgAltFallback : Content.Title)
             </div>
           </div>
         </div>
@@ -46,4 +46,4 @@
   </div>
 </div>
 
-@Html.Partial("_ImageCompare.PartAssets.cshtml", new { DomId = domId })
+@Html.Partial("Assets.cshtml", new { DomId = domId })

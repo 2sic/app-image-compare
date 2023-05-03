@@ -1,0 +1,14 @@
+@inherits Custom.Hybrid.Razor14
+
+@{
+  var data = new {
+      domId = DynamicModel.DomId,
+    };
+}
+
+@Kit.Page.Activate(condition: Kit.Css.IsUnknown, features: "Bootstrap5")
+
+@Kit.Page.TurnOn("window.appImageCompare2.init()", data: data)
+
+<link rel="stylesheet" href="@CmsContext.View.Path/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
+<script type="text/javascript" src="@CmsContext.View.Path/dist/scripts.min.js" @Kit.Page.AssetAttributes(position:"bottom" )></script>
