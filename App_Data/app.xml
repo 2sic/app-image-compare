@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.09.00" ExportDate="2022-09-21T08:42:52.847446+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.00.00" ExportDate="2023-05-03T16:19:55.3892417+02:00">
   <Header>
     <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
@@ -9,10 +9,10 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="658aed3e-b1c8-4274-b426-6e84fcb66270" Json="True" KeyNumber="5187">
@@ -92,7 +92,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Name="CompareImages" Description="Compare Images - With TwentyTwenty" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Name="CompareImages" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d63d5310-f40a-4874-bbb3-a7ac8c8fcbe8" Json="True" KeyNumber="5189">
@@ -423,9 +423,7 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="Formulas" Value="5a09e9c2-ad79-4863-9fbb-50d893b3dd45" Type="Entity">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
+            <Value Key="Formulas" Value="5a09e9c2-ad79-4863-9fbb-50d893b3dd45" Type="Entity" />
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
@@ -463,7 +461,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
           </Entity>
@@ -485,9 +483,7 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="Formulas" Value="3673723f-e0e0-428f-a2e1-27df16e00b54" Type="Entity">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
+            <Value Key="Formulas" Value="3673723f-e0e0-428f-a2e1-27df16e00b54" Type="Entity" />
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
@@ -570,7 +566,7 @@
             <Value Key="InputType" Value="wysiwyg" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
           </Entity>
@@ -610,13 +606,13 @@
       <Value Key="RequiredOqtaneVersion" Value="03.01.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="14.09.00" Type="String">
+      <Value Key="RequiredVersion" Value="16.00.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.02.01" Type="String">
+      <Value Key="Version" Value="02.03.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
@@ -628,9 +624,7 @@
     </Entity>
     <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="7a08595b-2b9b-497d-af42-aa6616dacf2c" KeyNumber="6" />
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="337873f2-5b5e-482b-8676-32b2903f99d6" Json="True">
-      <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -658,7 +652,7 @@
       <Value Key="Name" Value="Gross, ohne Beschreibung" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="_ImageCompare.cshtml" Type="String">
+      <Value Key="Path" Value="ImageCompare.cshtml" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="PresentationTypeStaticName" Value="" Type="String">
@@ -691,9 +685,7 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="72932239-82fe-441f-94ce-9dbc0bcd0e09" Json="True">
-      <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -721,7 +713,7 @@
       <Value Key="Name" Value="Bild-Text" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="_ImageCompare.cshtml" Type="String">
+      <Value Key="Path" Value="ImageCompare.cshtml" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="PresentationTypeStaticName" Value="" Type="String">
@@ -753,9 +745,7 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="0eacc0d6-95ab-43fd-9287-53c62b60312e" Json="True">
-      <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="ContentDemoEntity" Value="37788e1b-c9cb-4e31-8072-f4b0c77359de" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="154e0f11-38e3-47fe-a94f-2d7f617b19b9" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -783,7 +773,7 @@
       <Value Key="Name" Value="Text | Bild" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="_ImageCompare.cshtml" Type="String">
+      <Value Key="Path" Value="ImageCompare.cshtml" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="PresentationTypeStaticName" Value="" Type="String">
@@ -815,20 +805,12 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="008e5f77-5b62-40ea-898a-547299b78bef" Json="True">
-      <Value Key="Content" Value="null" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="Presentation" Value="null" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="Template" Value="337873f2-5b5e-482b-8676-32b2903f99d6" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="Content" Value="null" Type="Entity" />
+      <Value Key="Presentation" Value="null" Type="Entity" />
+      <Value Key="Template" Value="337873f2-5b5e-482b-8676-32b2903f99d6" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="61aeeb53-bb4a-4902-8682-43e37e8157f1" Json="True">
-      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" AttributeSetName="CompareImages" EntityGUID="37788e1b-c9cb-4e31-8072-f4b0c77359de">
       <Value Key="AfterLabel" Value="After" Type="String">
@@ -921,14 +903,10 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="10b02d5e-0f9d-4327-9266-a3f07ec0ed89" Json="True">
-      <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="a7a3dc0b-560a-498b-8191-d4f3e264ff4d" Json="True">
-      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="432115f1-b9f3-471d-853d-0c619937d94c" Json="True">
       <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;attributes&quot;: {&#xD;&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xD;&#xA;    },&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap3&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs3&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-responsive&quot; },&#xD;&#xA;        &quot;setWidth&quot;: false&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap4&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs4&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap5&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230, &#xD;&#xA;            &quot;attributes&quot;: { &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot; }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;6/12&quot;, &quot;width&quot;: 600 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;4/12&quot;, &quot;width&quot;: 390 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;3/12&quot;, &quot;width&quot;: 285 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
@@ -943,7 +921,7 @@
       <Value Key="ItemIdentifier" Value="ImageCompareDefault" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Quality" Value="80" Type="Number">
+      <Value Key="Quality" Value="80.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="ResizeMode" Value="crop" Type="String">
@@ -955,7 +933,7 @@
       <Value Key="SettingsIdentifier" Value="Images.ImageCompareDefault" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Width" Value="1400" Type="Number">
+      <Value Key="Width" Value="1400.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
@@ -994,20 +972,12 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="4155fa25-20ae-4205-9ad7-4b7e96b286cd" Json="True">
-      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="cd33026e-aab1-42bf-9316-c7ba64308bbb" Json="True">
-      <Value Key="Content" Value="72677c32-4859-4099-bbcb-ec5c101cff10" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="Presentation" Value="null" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
+      <Value Key="Content" Value="72677c32-4859-4099-bbcb-ec5c101cff10" Type="Entity" />
+      <Value Key="Presentation" Value="null" Type="Entity" />
+      <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" AttributeSetName="CompareImages" EntityGUID="72677c32-4859-4099-bbcb-ec5c101cff10">
       <Value Key="AfterLabel" Value="After" Type="String">
@@ -1052,7 +1022,7 @@
       <Value Key="SettingsIdentifier" Value="Images.Test" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Width" Value="500" Type="Number">
+      <Value Key="Width" Value="500.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
@@ -1069,16 +1039,16 @@
       <Value Key="ByUrlParameters" Value="False" Type="Boolean">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Duration" Value="14400" Type="Number">
+      <Value Key="Duration" Value="14400.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="DurationEditors" Value="300" Type="Number">
+      <Value Key="DurationEditors" Value="300.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="DurationSystemAdmin" Value="300" Type="Number">
+      <Value Key="DurationSystemAdmin" Value="300.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="DurationUsers" Value="-1" Type="Number">
+      <Value Key="DurationUsers" Value="-1.0" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="IsEnabled" Value="True" Type="Boolean">
