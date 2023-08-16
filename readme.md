@@ -8,9 +8,9 @@ A 2sxc / DNN App to highlight the differences between two images.
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v16
-| Dnn                 | ✅    | For v7, v8 and v9
-| Oqtane 2            | ✅    | Requires v2.02
+| 2sxc                | ✅    | requires 2sxc v16.02
+| Dnn                 | ✅    | For v9.6.1+
+| Oqtane 2            | ✅    | Requires v3.04+
 | No jQuery           | ✅    | Since v2.00
 | Live Demo           | ➖    | 
 | Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
@@ -49,3 +49,6 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
   * Enhanced Kit.Image with `imgAltFallback`
   * Replaced turnOn Tag with `Kit.Page.TurnOn`
   * Removed _ from Filenames
+* v02.04.00 2023-07
+  * 2sxc 16.02 coding conventions
+  * everything typed
