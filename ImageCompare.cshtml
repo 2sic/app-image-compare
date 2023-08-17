@@ -30,10 +30,10 @@
   <div class="app-imagecompare2-content">
     <div class="@imgWidthClass @imagePositionClass">
         <div id="@domId" class="beer-slider" data-beer-label="@labelBefore">
-          @Kit.Image.Picture(imgPair.Field("LeftImage"), settings: resizeSettings , factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
+          @imgPair.Picture("LeftImage", settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
           <div class="beer-reveal" data-beer-label="@labelAfter">
             <div>
-              @Kit.Image.Picture(imgPair.Field("RightImage"), settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
+              @imgPair.Picture("RightImage", settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
             </div>
           </div>
         </div>
