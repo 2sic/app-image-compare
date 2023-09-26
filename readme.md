@@ -8,9 +8,9 @@ A 2sxc / DNN App to highlight the differences between two images.
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v16.02
+| 2sxc                | ✅    | requires 2sxc v16.04
 | Dnn                 | ✅    | For v9.6.1+
-| Oqtane 2            | ✅    | Requires v3.04+
+| Oqtane 2            | ✅    | Requires v04.00
 | No jQuery           | ✅    | Since v2.00
 | Live Demo           | ➖    | 
 | Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
