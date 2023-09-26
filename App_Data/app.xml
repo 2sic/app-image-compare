@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.00.00" ExportDate="2023-05-03T16:19:55.3892417+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.07.00" ExportDate="2023-09-26T09:39:49.2956693+02:00">
   <Header>
     <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
@@ -27,8 +27,8 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="ImageSettings" Type="Entity" IsTitle="false">
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a6a3c0d3-4b52-48cb-b1db-a0bdcf68e88c" Json="True" KeyNumber="5188">
+        <Attribute StaticName="MsgImageSettings" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="945087cf-7ade-49e3-865f-7adf4a7416ba" Json="True" KeyNumber="5796">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
@@ -41,13 +41,19 @@
             <Value Key="DisableTranslation" Value="False" Type="Boolean">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="InputType" Value="entity-default" Type="String">
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="Name" Value="ImageSettings" Type="String">
+            <Value Key="Information" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="Notes" Value="" Type="String">
+            <Value Key="InputType" Value="empty-message" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="MsgImageSettings" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="&lt;p&gt;ℹ️ To edit the default Resize Settings, go to the System Settings in the section Images.&lt;/p&gt;" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="Placeholder" Value="" Type="String">
@@ -56,36 +62,13 @@
             <Value Key="Required" Value="False" Type="Boolean">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-          </Entity>
-          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="2a0ade51-f2c4-4167-8b7b-c1374212c2bb" Json="True" KeyNumber="5188">
-            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EnableAddExisting" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EnableCreate" Value="True" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EnableDelete" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EnableEdit" Value="True" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EnableRemove" Value="False" Type="Boolean">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="EntityType" Value="⚙️Image" Type="String">
-              <Dimension DimensionID="163" ReadOnly="false" />
-            </Value>
-            <Value Key="Prefill" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
           </Entity>
@@ -600,24 +583,23 @@
       <Value Key="OriginalId" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredDnnVersion" Value="07.04.02" Type="String">
+      <Value Key="RequiredDnnVersion" Value="09.06.01" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredOqtaneVersion" Value="03.01.00" Type="String">
+      <Value Key="RequiredOqtaneVersion" Value="03.04.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="16.00.00" Type="String">
+      <Value Key="RequiredVersion" Value="16.02.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.03.00" Type="String">
+      <Value Key="Version" Value="02.04.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
     <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="718a0216-d24f-4f7f-b4e9-7c83a7c79fb1" KeyNumber="6">
-      <Value Key="ImageSettings" Value="432115f1-b9f3-471d-853d-0c619937d94c" Type="Entity" />
       <Value Key="Title" Value="Image Compare" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -918,10 +900,10 @@
       <Value Key="Format" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="ItemIdentifier" Value="ImageCompareDefault" Type="String">
+      <Value Key="ItemIdentifier" Value="ImageCompare" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Quality" Value="80.0" Type="Number">
+      <Value Key="Quality" Value="80" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="ResizeMode" Value="crop" Type="String">
@@ -930,10 +912,10 @@
       <Value Key="ScaleMode" Value="both" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="SettingsIdentifier" Value="Images.ImageCompareDefault" Type="String">
+      <Value Key="SettingsIdentifier" Value="Images.ImageCompare" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Width" Value="1400.0" Type="Number">
+      <Value Key="Width" Value="1400" Type="Number">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
@@ -1027,7 +1009,7 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7edd0b8d-1405-44ed-ac33-d0d63a274bd6" AttributeSetName="⚙️Images" EntityGUID="8731c080-8c87-4009-b42d-30f205dd315c" Json="True">
-      <Value Key="Items" Value="9cdfd9f1-f1ab-494f-be2e-8797b81588e8,432115f1-b9f3-471d-853d-0c619937d94c" Type="Entity" />
+      <Value Key="Items" Value="432115f1-b9f3-471d-853d-0c619937d94c" Type="Entity" />
       <Value Key="SettingsIdentifier" Value="Images" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -1058,6 +1040,15 @@
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="UrlParametersCaseSensitive" Value="False" Type="Boolean">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="813a3cb7-1a89-4477-bdfe-8863ab3ae59a" AttributeSetName="SettingsSystem" EntityGUID="635b4d3f-c0db-4f84-9a7a-6148bf09bc92" Json="True">
+      <Value Key="Images" Value="8731c080-8c87-4009-b42d-30f205dd315c" Type="Entity" />
+      <Value Key="SettingsEntityScope" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="System Settings" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
