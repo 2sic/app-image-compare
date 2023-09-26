@@ -18,7 +18,7 @@
   var labelBefore = imgPair.Bool("ShowLabels") ? imgPair.String("BeforeLabel") : "";
   var labelAfter = imgPair.Bool("ShowLabels") ? imgPair.String("AfterLabel") : "";
 
-  var domId = "app-imagecompare2-id" + MyContext.Module.Id;
+  var domId = "app-imagecompare2-id" + UniqueKey;
 }
 
 <div class="app-imagecompare2-main" @Kit.Toolbar.Default(imgPair)>
