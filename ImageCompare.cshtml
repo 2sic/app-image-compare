@@ -15,8 +15,8 @@
   var pairSettings = imgPair.Child("ImageSettings");
   var resizeSettings = AsStack(pairSettings, AllSettings.Child("Images.ImageCompare"));
   var resizeFactor = showText && pairSettings == null ? 0.5 : 1;
-  var labelBefore = imgPair.Bool("ShowLabels") ? imgPair.String("BeforeLabel") : "";
-  var labelAfter = imgPair.Bool("ShowLabels") ? imgPair.String("AfterLabel") : "";
+  var labelRight = imgPair.Bool("ShowLabels") ? imgPair.String("LabelRight") : "";
+  var labelLeft = imgPair.Bool("ShowLabels") ? imgPair.String("LabelLeft") : "";
 
   var domId = "app-imagecompare2-id" + UniqueKey;
 }
@@ -29,11 +29,11 @@
   }
   <div class="app-imagecompare2-content">
     <div class="@imgWidthClass @imagePositionClass">
-        <div id="@domId" class="beer-slider" data-beer-label="@labelBefore">
-          @imgPair.Picture("LeftImage", settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
-          <div class="beer-reveal" data-beer-label="@labelAfter">
+        <div id="@domId" class="beer-slider" data-beer-label="@labelLeft">
+          @imgPair.Picture("RightImage", settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
+          <div class="beer-reveal" data-beer-label="@labelRight">
             <div>
-              @imgPair.Picture("RightImage", settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
+              @imgPair.Picture("LeftImage", settings: resizeSettings, factor: resizeFactor, imgAltFallback: imgPair.String("Title"))
             </div>
           </div>
         </div>

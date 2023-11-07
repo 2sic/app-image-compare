@@ -52,3 +52,5 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
 * v02.04.00 2023-07
   * 2sxc 16.02 coding conventions
   * everything typed
+* v02.05.00 2023-11
+  * Img and Label Left to the Left Side, previously wrong
