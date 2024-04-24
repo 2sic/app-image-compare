@@ -58,4 +58,3 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
   * Strong Typed
   * Auto Generated Class
   * Typed MyItem
-

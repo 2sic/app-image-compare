@@ -10,27 +10,32 @@
   var imgPair = As<CompareImages>(MyItem);
 
   // Figure out positioning of text based on View Settings, usually left, right or none
-  var showText = MyView.Identifier != "none"; // bool
-  var imagePositionClass = MyView.Identifier == "left" ? "app-imagecompare2-after-text" : ""; // string
-  var imgWidthClass = showText ? "app-imagecompare2-img50" : ""; // string
+  var showBody = MyView.Identifier != "none";
+  var imagePositionClass = MyView.Identifier == "left" ? "app-imagecompare2-after-text" : "";
+  var imgWidthClass = showBody ? "app-imagecompare2-img50" : "";
 
   // Merge settings of current item with defaults to get resize parameters
-  var pairSettings = imgPair.ImageSettings;
-  var resizeSettings = AsStack(pairSettings, AllSettings.Child("Images.ImageCompare"));
-  var resizeFactor = showText && pairSettings == null ? 0.5 : 1;
+  var resizeSettings = AsStack(imgPair.ImageSettings, AllSettings.Child("Images.ImageCompare"));
+
+  // If we show the body, we'll resize the images to 50% of their original size
+  var resizeFactor = showBody && imgPair.ImageSettings == null ? 0.5 : 1;
+
+  // Get the labels for the images - but only if we should show them
   var labelRight = imgPair.ShowLabels ? imgPair.LabelRight : "";
   var labelLeft = imgPair.ShowLabels ? imgPair.LabelLeft : "";
 
-// Generate a unique ID for the slider
+  // Generate a unique ID for the slider
   string domId = "app-imagecompare2-id" + UniqueKey;
 }
 
 <div class="app-imagecompare2-main" @Kit.Toolbar.Default(imgPair)>
 
   @* if we don't show the content/body, the title will still be needed, but above the image *@
-  @if (!showText) {
+  @if (!showBody) {
     <h2>@imgPair.Title</h2>
   }
+
+  @* Show the two images with the beer-slider JS *@
   <div class="app-imagecompare2-content">
     <div class="@imgWidthClass @imagePositionClass">
         <div id="@domId" class="beer-slider" data-beer-label="@labelLeft">
@@ -42,7 +47,10 @@
           </div>
         </div>
     </div>
-    @if (showText) {
+
+    @* Show the content/body if needed *@
+    @if (showBody)
+    {
       <div class="content-text">
         <h2>@imgPair.Title</h2>
         @imgPair.Html("DescriptionText", container:"")
