@@ -6,11 +6,11 @@
 
 A 2sxc / DNN App to highlight the differences between two images.
 
-| Aspect              | Status | Comments or Version |
-| ------------------- | :----: | ------------------- |
+| Aspect              | Status | Comments or Version
+| ------------------- | :----: | -------------------
 | 2sxc                | ✅    | requires 2sxc v17.06.02
 | Dnn                 | ✅    | For v9.6.1+
-| Oqtane 2            | ✅    | Requires v04.00
+| Oqtane              | ✅    | Requires v04.00
 | No jQuery           | ✅    | Since v2.00
 | Live Demo           | ➖    | 
 | Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
@@ -55,4 +55,7 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
 * v02.05.00 2023-11
   * Img and Label Left to the Left Side, previously wrong
 * v02.05.17 2024-04
-  * strong Typed
+  * Strong Typed
+  * Auto Generated Class
+  * Typed MyItem
+
