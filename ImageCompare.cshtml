@@ -15,7 +15,7 @@
   var imgWidthClass = showBody ? "app-imagecompare2-img50" : "";
 
   // Merge settings of current item with defaults to get resize parameters
-  var resizeSettings = AsStack(imgPair.ImageSettings, AllSettings.Child("Images.ImageCompare"));
+  var resizeSettings = AsStack<CompareImages>(imgPair.ImageSettings, AllSettings.Child("Images.ImageCompare"));
 
   // If we show the body, we'll resize the images to 50% of their original size
   var resizeFactor = showBody && imgPair.ImageSettings == null ? 0.5 : 1;
