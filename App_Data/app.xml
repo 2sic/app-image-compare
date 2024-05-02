@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.07.00" ExportDate="2023-09-26T09:39:49.2956693+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.07.00" ExportDate="2024-05-02T10:48:41.200737+02:00">
   <Header>
     <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
@@ -389,12 +389,12 @@
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="BeforeLabel" Type="String" IsTitle="false">
+        <Attribute StaticName="LabelRight" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="813f9a9d-b780-4cc9-af81-ce88921c4d9e" Json="True" KeyNumber="5194">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="Before" Type="String">
+            <Value Key="DefaultValue" Value="After" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="DefaultValue" Value="Vorher" Type="String">
@@ -407,6 +407,12 @@
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="5a09e9c2-ad79-4863-9fbb-50d893b3dd45" Type="Entity" />
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
@@ -423,6 +429,9 @@
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -444,17 +453,17 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1.0" Type="Number">
+            <Value Key="RowCount" Value="1" Type="Number">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
           </Entity>
         </Attribute>
-        <Attribute StaticName="AfterLabel" Type="String" IsTitle="false">
+        <Attribute StaticName="LabelLeft" Type="String" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4693901d-6083-4cc9-966a-1d8976049449" Json="True" KeyNumber="5195">
             <Value Key="CustomJavaScript" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
-            <Value Key="DefaultValue" Value="After" Type="String">
+            <Value Key="DefaultValue" Value="Before" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="DefaultValue" Value="Nachher" Type="String">
@@ -467,6 +476,12 @@
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="Formulas" Value="3673723f-e0e0-428f-a2e1-27df16e00b54" Type="Entity" />
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
             <Value Key="InputType" Value="string-default" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
@@ -483,6 +498,9 @@
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="163" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
               <Dimension DimensionID="163" ReadOnly="false" />
             </Value>
             <Value Key="ValidationRegExJavaScript" Value="" Type="String">
@@ -565,6 +583,9 @@
       <Value Key="AllowTokenTemplates" Value="True" Type="Boolean">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
+      <Value Key="DebugLog" Value="" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
       <Value Key="Description" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
@@ -586,16 +607,16 @@
       <Value Key="RequiredDnnVersion" Value="09.06.01" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredOqtaneVersion" Value="03.04.00" Type="String">
+      <Value Key="RequiredOqtaneVersion" Value="05.00.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="16.02.00" Type="String">
+      <Value Key="RequiredVersion" Value="17.07.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.04.00" Type="String">
+      <Value Key="Version" Value="02.17.00" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
@@ -795,22 +816,22 @@
       <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" AttributeSetName="CompareImages" EntityGUID="37788e1b-c9cb-4e31-8072-f4b0c77359de">
-      <Value Key="AfterLabel" Value="After" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="AfterLabel" Value="Danach" Type="String">
-        <Dimension DimensionID="164" ReadOnly="false" />
-      </Value>
-      <Value Key="BeforeLabel" Value="Before" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="BeforeLabel" Value="Zuvor" Type="String">
-        <Dimension DimensionID="164" ReadOnly="false" />
-      </Value>
       <Value Key="DescriptionText" Value="&lt;p&gt;Need help getting started? Take a look at &lt;a href=&quot;https://azing.org/2sxc/r/VipBSgUQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;this azing checklist&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="DescriptionText" Value="&lt;p&gt;Brauchen Sie Hilfe? Schauen Sie sich &lt;a href=&quot;https://azing.org/2sxc/r/VipBSgUQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;diese azing checklist&lt;/a&gt;&amp;nbsp;an.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="164" ReadOnly="false" />
+      </Value>
+      <Value Key="LabelLeft" Value="Before" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="LabelLeft" Value="Danach" Type="String">
+        <Dimension DimensionID="164" ReadOnly="false" />
+      </Value>
+      <Value Key="LabelRight" Value="After" Type="String">
+        <Dimension DimensionID="163" ReadOnly="false" />
+      </Value>
+      <Value Key="LabelRight" Value="Zuvor" Type="String">
         <Dimension DimensionID="164" ReadOnly="false" />
       </Value>
       <Value Key="LeftImage" Value="file:4520" Type="Hyperlink">
@@ -957,32 +978,9 @@
       <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="cd33026e-aab1-42bf-9316-c7ba64308bbb" Json="True">
-      <Value Key="Content" Value="72677c32-4859-4099-bbcb-ec5c101cff10" Type="Entity" />
+      <Value Key="Content" Value="null" Type="Entity" />
       <Value Key="Presentation" Value="null" Type="Entity" />
       <Value Key="Template" Value="0eacc0d6-95ab-43fd-9287-53c62b60312e" Type="Entity" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="154e0f11-38e3-47fe-a94f-2d7f617b19b9" AttributeSetName="CompareImages" EntityGUID="72677c32-4859-4099-bbcb-ec5c101cff10">
-      <Value Key="AfterLabel" Value="After" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="BeforeLabel" Value="Before" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="DescriptionText" Value="" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="LeftImage" Value="file:6010" Type="Hyperlink">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="RightImage" Value="file:6011" Type="Hyperlink">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="ShowLabels" Value="False" Type="Boolean">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
-      <Value Key="Title" Value="test" Type="String">
-        <Dimension DimensionID="163" ReadOnly="false" />
-      </Value>
     </Entity>
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="529ba3a2-d7d4-4f40-a81b-ff819de03a9e" AttributeSetName="IsDefaultDecorator" EntityGUID="25a40359-2940-42d6-9f02-7e3d94293cd6" Json="True" KeyGuid="72932239-82fe-441f-94ce-9dbc0bcd0e09" />
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="9cdfd9f1-f1ab-494f-be2e-8797b81588e8" Json="True">
@@ -1052,27 +1050,45 @@
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
     </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="b7a047ce-00d9-4060-befc-8104345ff058" Json="True">
+      <Value Key="Content" Value="null" Type="Entity" />
+      <Value Key="Presentation" Value="null" Type="Entity" />
+      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="aa6055d1-6976-4638-8ec6-4d52f0ae6bce" Json="True">
+      <Value Key="Content" Value="null" Type="Entity" />
+      <Value Key="Presentation" Value="null" Type="Entity" />
+      <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
+    </Entity>
   </Entities>
   <PortalFiles>
     <File Id="4520" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers original.jpg" />
     <File Id="4519" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\AfterImage\flowers sepia.jpg" />
-    <File Id="6010" RelativePath="adam\ImageCompare2\MnxncllImUC7y-xcEBz_EA\BeforeImage\Platzhalterbild_Inhalt-1.jpg" />
-    <File Id="6011" RelativePath="adam\ImageCompare2\MnxncllImUC7y-xcEBz_EA\AfterImage\Platzhalterbild_Inhalt-1.jpg" />
+    <File Id="6505" RelativePath="adam\ImageCompare2\dadq_pMb3kOYo9Hyu4s5Kw\LeftImage\pfannkuchen.jpg" />
+    <File Id="6504" RelativePath="adam\ImageCompare2\dadq_pMb3kOYo9Hyu4s5Kw\RightImage\demo.png" />
     <File Id="4518" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers sepia.jpg" />
+    <File Id="6500" RelativePath="adam\ImageCompare2\IDRAYxxM5kaRIq-MpStK6g\LeftImage\pfannkuchen.jpg" />
+    <File Id="6501" RelativePath="adam\ImageCompare2\IDRAYxxM5kaRIq-MpStK6g\RightImage\demo.png" />
     <File Id="4517" RelativePath="adam\ImageCompare2\IMKYxeF9l0eOKzJhR4MWUQ\AfterImage\Vater_Sohn_Bank_zugeschnitte.jpg" />
     <File Id="4516" RelativePath="adam\ImageCompare2\IMKYxeF9l0eOKzJhR4MWUQ\BeforeImage\AdobeStock_133147931.jpeg" />
     <File Id="4521" RelativePath="adam\ImageCompare2\jtMx67kkxEajc1FBtme6Lg\AfterImage\flowers sepia.jpg" />
     <File Id="4522" RelativePath="adam\ImageCompare2\jtMx67kkxEajc1FBtme6Lg\BeforeImage\flowers original.jpg" />
+    <File Id="6011" RelativePath="adam\ImageCompare2\MnxncllImUC7y-xcEBz_EA\AfterImage\Platzhalterbild_Inhalt-1.jpg" />
+    <File Id="6010" RelativePath="adam\ImageCompare2\MnxncllImUC7y-xcEBz_EA\BeforeImage\Platzhalterbild_Inhalt-1.jpg" />
   </PortalFiles>
   <PortalFolders>
     <Folder Id="9948" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/BeforeImage/" />
     <Folder Id="9949" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/AfterImage/" />
-    <Folder Id="13412" RelativePath="adam/ImageCompare2/MnxncllImUC7y-xcEBz_EA/BeforeImage/" />
-    <Folder Id="13413" RelativePath="adam/ImageCompare2/MnxncllImUC7y-xcEBz_EA/AfterImage/" />
+    <Folder Id="14249" RelativePath="adam/ImageCompare2/dadq_pMb3kOYo9Hyu4s5Kw/LeftImage/" />
+    <Folder Id="14250" RelativePath="adam/ImageCompare2/dadq_pMb3kOYo9Hyu4s5Kw/RightImage/" />
+    <Folder Id="14246" RelativePath="adam/ImageCompare2/IDRAYxxM5kaRIq-MpStK6g/LeftImage/" />
+    <Folder Id="14247" RelativePath="adam/ImageCompare2/IDRAYxxM5kaRIq-MpStK6g/RightImage/" />
     <Folder Id="9946" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/AfterImage/" />
     <Folder Id="9945" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/BeforeImage/" />
     <Folder Id="9952" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/AfterImage/" />
     <Folder Id="9953" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/BeforeImage/" />
+    <Folder Id="13413" RelativePath="adam/ImageCompare2/MnxncllImUC7y-xcEBz_EA/AfterImage/" />
+    <Folder Id="13412" RelativePath="adam/ImageCompare2/MnxncllImUC7y-xcEBz_EA/BeforeImage/" />
     <Folder Id="9943" RelativePath="adam/ImageCompare2/" />
     <Folder Id="12737" RelativePath="adam/ImageCompare2/_0SXLz_4k0yvfx1skEKy2g/" />
     <Folder Id="12738" RelativePath="adam/ImageCompare2/_0SXLz_4k0yvfx1skEKy2g/Icon/" />
@@ -1080,7 +1096,9 @@
     <Folder Id="12742" RelativePath="adam/ImageCompare2/1sCsDquV_UOSh1PGK2AxLg/Icon/" />
     <Folder Id="12735" RelativePath="adam/ImageCompare2/8nN4M15bK0iGdjKykD-Z1g/" />
     <Folder Id="12736" RelativePath="adam/ImageCompare2/8nN4M15bK0iGdjKykD-Z1g/Icon/" />
+    <Folder Id="14248" RelativePath="adam/ImageCompare2/dadq_pMb3kOYo9Hyu4s5Kw/" />
     <Folder Id="9947" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/" />
+    <Folder Id="14245" RelativePath="adam/ImageCompare2/IDRAYxxM5kaRIq-MpStK6g/" />
     <Folder Id="9944" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/" />
     <Folder Id="12743" RelativePath="adam/ImageCompare2/izYBx-CJlkiJOBIzsyGCVg/" />
     <Folder Id="12745" RelativePath="adam/ImageCompare2/izYBx-CJlkiJOBIzsyGCVg/AfterImage/" />

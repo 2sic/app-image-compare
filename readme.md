@@ -10,7 +10,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 | ------------------- | :----: | -------------------
 | 2sxc                | ✅    | requires 2sxc v17.07.00
 | Dnn                 | ✅    | For v9.6.1+
-| Oqtane              | ✅    | Requires v04.00
+| Oqtane              | ✅    | Requires v05.00
 | No jQuery           | ✅    | Since v2.00
 | Live Demo           | ➖    | 
 | Install Checklist   | ✅    | See [Installation](https://azing.org/2sxc/r/VipBSgUQ) on [azing.org](https://azing.org/2sxc)
