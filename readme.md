@@ -54,7 +54,7 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
   * everything typed
 * v02.05.00 2023-11
   * Img and Label Left to the Left Side, previously wrong
-* v02.05.17 2024-04
+* v02.17.00 2024-04
   * Strong Typed
   * Auto Generated Class
   * Typed MyItem
