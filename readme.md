@@ -58,3 +58,5 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
   * Strong Typed
   * Auto Generated Class
   * Typed MyItem
+* v02.17.00 2024-04
+  * Update app.sln and app.csproj
