@@ -1,5 +1,5 @@
-let BeerSlider = require('../../node_modules/beerslider');
-require('../scss/_style.scss');
+// @ts-ignore
+import BeerSlider from '../../node_modules/beerslider';
 
 const winAny = (window as any);
 winAny.appImageCompare2 ??= {};

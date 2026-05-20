@@ -1,151 +1,92 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 import * as sass from 'sass';
 import autoprefixer from 'autoprefixer';
 import postcss from 'postcss';
 
+const scssPath = resolve(process.cwd(), `src/scss/styles.scss`);
+const scssFiles = new Set();
+
 export default defineConfig({
-  // Root directory for the build
   root: '.',
-  
-  // Build configuration
+  cacheDir: '.vite_cache',
+
   build: {
-    // Output directory
-    outDir: 'dist',
-    
-    // Enable source maps for both JS and CSS
+    outDir: `dist`,
     sourcemap: true,
-    
-    // Empty output directory before build
     emptyOutDir: false,
-    
-    // Rollup options
+    assetsDir: 'images',
+
     rollupOptions: {
-      // Entry point for TypeScript only
       input: {
-        scripts: resolve(__dirname, 'src/ts/index.ts'),
+        scripts: resolve(process.cwd(), 'src/ts/index.ts'),
       },
       output: {
-        // Configure output file names
-        entryFileNames: 'scripts.min.js',
+        entryFileNames: '[name].min.js',
         chunkFileNames: '[name].min.js',
         assetFileNames: (assetInfo) => {
           if (assetInfo.name?.endsWith('.css')) {
-            return 'styles.min.css';
+            const name = assetInfo.name.includes('entry') ? 'styles' : assetInfo.name.replace('.css', '');
+            return `${name}.min.css`;
           }
-          if (assetInfo.name?.match(/\.(png|jpe?g|svg|gif|webp|avif)$/)) {
-            return 'images/[name]-[hash][extname]';
-          }
-          return '[name]-[hash][extname]';
+          return 'images/[name].[hash][extname]';
         },
       },
     },
-    
-    // Enable minification
+
     minify: 'esbuild',
-    
-    // Target browsers
     target: 'es2020',
-    
-    // Disable CSS code split
     cssCodeSplit: false,
-    
-    // Cache directory
-    cacheDir: '.vite_cache',
-  },
-  
-  // CSS configuration
-  css: {
-    preprocessorOptions: {
-      scss: {
-        // Silence SCSS deprecation warnings
-        silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import'],
-      },
-    },
-    postcss: {
-      plugins: [
-        autoprefixer(), // Autoprefixer for vendor prefixes
-      ],
-    },
-  },
-  
-  // Resolve configuration
-  resolve: {
-    extensions: ['.ts', '.js', '.scss', '.css'],
-  },
-  
-  // Development server settings
-  server: {
-    port: 3000,
-    open: false,
+
     watch: {
       usePolling: true,
     },
   },
-  
-  // Plugins
+
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.scss', '.css'],
+  },
+
   plugins: [
     {
       name: 'compile-scss-to-css',
+
+      buildStart() {
+        this.addWatchFile(scssPath);
+        scssFiles.forEach(file => this.addWatchFile(file));
+      },
+
       async generateBundle(options, bundle) {
-        // Compile SCSS file directly
-        const scssPath = resolve(__dirname, 'src/scss/styles.scss');
-        
-        try {
-          // Compile SCSS to CSS
-          const result = sass.compile(scssPath, {
-            sourceMap: true,
-            style: 'compressed',
-            silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import'],
-          });
-          
-          // Apply PostCSS (Autoprefixer)
-          const postcssResult = await postcss([autoprefixer()]).process(result.css, {
-            from: scssPath,
-            to: 'styles.min.css',
-            map: { 
-              inline: false, 
-              annotation: true,
-              prev: result.sourceMap ? JSON.stringify(result.sourceMap) : false,
-            },
-          });
-          
-          // Add CSS file to bundle
-          this.emitFile({
-            type: 'asset',
-            fileName: 'styles.min.css',
-            source: postcssResult.css,
-          });
-          
-          // Add source map
-          if (postcssResult.map) {
-            this.emitFile({
-              type: 'asset',
-              fileName: 'styles.min.css.map',
-              source: postcssResult.map.toString(),
-            });
+        const result = sass.compile(scssPath, {
+          sourceMap: true,
+          style: 'compressed',
+          silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import'],
+        });
+
+        result.loadedUrls.forEach(url => {
+          if (url.protocol === 'file:') {
+            const filePath = fileURLToPath(url);
+            scssFiles.add(filePath);
+            this.addWatchFile(filePath);
           }
-          
-          console.log('✓ CSS compiled successfully');
-        } catch (error) {
-          console.error('Error compiling SCSS:', error);
-          throw error;
+        });
+
+        const postcssResult = await postcss([autoprefixer()]).process(result.css, {
+          from: scssPath,
+          to: 'styles.min.css',
+          map: {
+            inline: false,
+            annotation: true,
+            prev: result.sourceMap ? JSON.stringify(result.sourceMap) : false,
+          },
+        });
+
+        this.emitFile({ type: 'asset', fileName: 'styles.min.css', source: postcssResult.css });
+        if (postcssResult.map) {
+          this.emitFile({ type: 'asset', fileName: 'styles.min.css.map', source: postcssResult.map.toString() });
         }
       },
-    },
-    {
-      name: 'progress-plugin',
-      buildStart() {
-        console.log('\nBuilding...');
-      },
-      buildEnd() {
-        console.log('✓ Build complete\n');
-      },
-    },
+    }
   ],
-  
-  // Optimization
-  optimizeDeps: {
-    include: ['typescript'],
-  },
 });
