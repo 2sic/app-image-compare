@@ -1,13 +1,19 @@
 {
     "compilerOptions": {
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "lib": ["es6", "dom"],
-        "target": "es3",
-        "allowJs": true
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "ESNext",
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],
+      "target": "ES2020",
+      "allowJs": true,
+      "strict": true,
+      "moduleResolution": "bundler",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "outDir": "./dist",
+      "resolveJsonModule": true,
+      "isolatedModules": true
     },
-    "typeRoots": [
-        "./typings"
-    ]
-}
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+  }
