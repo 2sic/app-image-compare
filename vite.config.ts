@@ -23,7 +23,7 @@ export default defineConfig({
     rollupOptions: {
       // Entry point for TypeScript only
       input: {
-        scripts: resolve(__dirname, 'src/ts/scripts.ts'),
+        scripts: resolve(__dirname, 'src/ts/index.ts'),
       },
       output: {
         // Configure output file names
