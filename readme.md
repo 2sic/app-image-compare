@@ -60,3 +60,7 @@ The App uses inline-styles and style tags, which you can directly adjust in the 
   * Typed MyItem
 * v02.17.00 2024-04
   * Update app.sln and app.csproj
+* v02.21.00 2026-03
+  * Added intellisense Extensions for Visual Studio Code
+* v02.21.01 2026-06
+  * Switched from webpack to Vite for faster builds
