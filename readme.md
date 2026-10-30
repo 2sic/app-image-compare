@@ -18,7 +18,7 @@ A 2sxc / DNN App to highlight the differences between two images.
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-v2-using-beerslider-hybrid-for-dnn-and-oqtane)
 | Screenshots         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/compare-images-v2-using-beerslider-hybrid-for-dnn-and-oqtane)
 | Best Practices      | ✅    | Uses v13.10 conventions
-| Bootstrap 4         | ✅    | v4 optimized
+| Bootstrap 4         | ❌    | Last supported in v02.21.01
 | Bootstrap 5         | ✔️    | Tested but not optimized
 
 ## Customize the App
@@ -30,6 +30,10 @@ But since it's open source, you can easily modify it to become anything you want
 The App uses inline-styles and style tags, which you can directly adjust in the templates.
 
 ## History
+
+* v02.21.02 2026-10
+  * Removed Bootstrap 4 support; the app is now Bootstrap 5 only
+  * For Bootstrap 4, use v02.21.01
 
 * v02.0 2021-09
   * Updated to best practices of 2sxc 12.05
