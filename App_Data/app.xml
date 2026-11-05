@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="21.08.00" ExportDate="2026-06-15T16:42:52.6329282+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="22.01.00" ExportDate="2026-11-05T12:55:06.9958245+01:00">
   <Header>
     <App Guid="6676ab99-e22f-4cab-a0ba-394f15e5d6c8" />
     <Language Default="en-us" />
@@ -577,10 +577,10 @@
       <Value Key="OriginalId" Value="" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredDnnVersion" Value="09.06.01" Type="String">
+      <Value Key="RequiredDnnVersion" Value="9.11.2" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredOqtaneVersion" Value="05.00.00" Type="String">
+      <Value Key="RequiredOqtaneVersion" Value="10.0.0" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="RequiredVersion" Value="21.05.00" Type="String">
@@ -885,7 +885,7 @@
       <Value Key="Template" Value="72932239-82fe-441f-94ce-9dbc0bcd0e09" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1a86b080-9e0d-4207-97d2-04edf80b4f2f" AttributeSetName="⚙️Image" EntityGUID="432115f1-b9f3-471d-853d-0c619937d94c" Json="True">
-      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;attributes&quot;: {&#xD;&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xD;&#xA;    },&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap5&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230, &#xD;&#xA;            &quot;attributes&quot;: { &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot; }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;6/12&quot;, &quot;width&quot;: 600 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;4/12&quot;, &quot;width&quot;: 390 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;3/12&quot;, &quot;width&quot;: 285 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
+      <Value Key="Advanced" Value="{&#xD;&#xA;  &quot;recipe&quot;: {&#xD;&#xA;    &quot;name&quot;: &quot;default&quot;,&#xD;&#xA;    &quot;variants&quot;: &quot;2*, 1*, 3/4*, 1/2*&quot;,&#xD;&#xA;    &quot;setWidth&quot;: false,&#xD;&#xA;    &quot;attributes&quot;: {&#xD;&#xA;      &quot;loading&quot;: &quot;lazy&quot;&#xD;&#xA;    },&#xD;&#xA;    &quot;recipes&quot;: [&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap3&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs3&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-responsive&quot; },&#xD;&#xA;        &quot;setWidth&quot;: false&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap4&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs4&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true&#xD;&#xA;      },&#xD;&#xA;      {&#xD;&#xA;        &quot;name&quot;: &quot;Experimental Bootstrap5&quot;,&#xD;&#xA;        &quot;forCss&quot;: &quot;bs5&quot;,&#xD;&#xA;        &quot;attributes&quot;: { &quot;class&quot;: &quot;img-fluid&quot; },&#xD;&#xA;        &quot;setWidth&quot;: true,&#xD;&#xA;        &quot;recipes&quot;: [&#xD;&#xA;          { &#xD;&#xA;            &quot;forFactor&quot;: &quot;12/12&quot;, &#xD;&#xA;            &quot;width&quot;: 1230, &#xD;&#xA;            &quot;attributes&quot;: { &quot;sizes&quot;: &quot;(max-width: 1400px) 100vw, 1230px&quot; }&#xD;&#xA;          },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;11/12&quot;, &quot;width&quot;: 1100 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;10/12&quot;, &quot;width&quot;: 1000 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;9/12&quot;, &quot;width&quot;: 900 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;8/12&quot;, &quot;width&quot;: 800 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;7/12&quot;, &quot;width&quot;: 700 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;6/12&quot;, &quot;width&quot;: 600 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;5/12&quot;, &quot;width&quot;: 500 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;4/12&quot;, &quot;width&quot;: 390 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;3/12&quot;, &quot;width&quot;: 285 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;2/12&quot;, &quot;width&quot;: 170 },&#xD;&#xA;          { &quot;forFactor&quot;: &quot;1/12&quot;, &quot;width&quot;:  75 }&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    ]&#xD;&#xA;  }&#xD;&#xA;}" Type="String">
         <Dimension DimensionID="163" ReadOnly="false" />
       </Value>
       <Value Key="AspectRatio" Value="1.618" Type="Number">
@@ -1035,19 +1035,19 @@
     </Entity>
   </Entities>
   <PortalFiles>
-    <File Id="4520" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers original.jpg" />
-    <File Id="4519" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\AfterImage\flowers sepia.jpg" />
-    <File Id="6505" RelativePath="adam\ImageCompare2\dadq_pMb3kOYo9Hyu4s5Kw\LeftImage\pfannkuchen.jpg" />
-    <File Id="6504" RelativePath="adam\ImageCompare2\dadq_pMb3kOYo9Hyu4s5Kw\RightImage\demo.png" />
-    <File Id="4518" RelativePath="adam\ImageCompare2\G454N8vJMU6AcvSwx3NZ3g\BeforeImage\flowers sepia.jpg" />
-    <File Id="6500" RelativePath="adam\ImageCompare2\IDRAYxxM5kaRIq-MpStK6g\LeftImage\pfannkuchen.jpg" />
-    <File Id="6501" RelativePath="adam\ImageCompare2\IDRAYxxM5kaRIq-MpStK6g\RightImage\demo.png" />
-    <File Id="4517" RelativePath="adam\ImageCompare2\IMKYxeF9l0eOKzJhR4MWUQ\AfterImage\Vater_Sohn_Bank_zugeschnitte.jpg" />
-    <File Id="4516" RelativePath="adam\ImageCompare2\IMKYxeF9l0eOKzJhR4MWUQ\BeforeImage\AdobeStock_133147931.jpeg" />
-    <File Id="4521" RelativePath="adam\ImageCompare2\jtMx67kkxEajc1FBtme6Lg\AfterImage\flowers sepia.jpg" />
-    <File Id="4522" RelativePath="adam\ImageCompare2\jtMx67kkxEajc1FBtme6Lg\BeforeImage\flowers original.jpg" />
-    <File Id="6011" RelativePath="adam\ImageCompare2\MnxncllImUC7y-xcEBz_EA\AfterImage\Platzhalterbild_Inhalt-1.jpg" />
-    <File Id="6010" RelativePath="adam\ImageCompare2\MnxncllImUC7y-xcEBz_EA\BeforeImage\Platzhalterbild_Inhalt-1.jpg" />
+    <File Id="4520" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/BeforeImage/flowers original.jpg" />
+    <File Id="4519" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/AfterImage/flowers sepia.jpg" />
+    <File Id="6505" RelativePath="adam/ImageCompare2/dadq_pMb3kOYo9Hyu4s5Kw/LeftImage/pfannkuchen.jpg" />
+    <File Id="6504" RelativePath="adam/ImageCompare2/dadq_pMb3kOYo9Hyu4s5Kw/RightImage/demo.png" />
+    <File Id="4518" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/BeforeImage/flowers sepia.jpg" />
+    <File Id="6500" RelativePath="adam/ImageCompare2/IDRAYxxM5kaRIq-MpStK6g/LeftImage/pfannkuchen.jpg" />
+    <File Id="6501" RelativePath="adam/ImageCompare2/IDRAYxxM5kaRIq-MpStK6g/RightImage/demo.png" />
+    <File Id="4517" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/AfterImage/Vater_Sohn_Bank_zugeschnitte.jpg" />
+    <File Id="4516" RelativePath="adam/ImageCompare2/IMKYxeF9l0eOKzJhR4MWUQ/BeforeImage/AdobeStock_133147931.jpeg" />
+    <File Id="4521" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/AfterImage/flowers sepia.jpg" />
+    <File Id="4522" RelativePath="adam/ImageCompare2/jtMx67kkxEajc1FBtme6Lg/BeforeImage/flowers original.jpg" />
+    <File Id="6011" RelativePath="adam/ImageCompare2/MnxncllImUC7y-xcEBz_EA/AfterImage/Platzhalterbild_Inhalt-1.jpg" />
+    <File Id="6010" RelativePath="adam/ImageCompare2/MnxncllImUC7y-xcEBz_EA/BeforeImage/Platzhalterbild_Inhalt-1.jpg" />
   </PortalFiles>
   <PortalFolders>
     <Folder Id="9948" RelativePath="adam/ImageCompare2/G454N8vJMU6AcvSwx3NZ3g/BeforeImage/" />
